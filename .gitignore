@@ -38,6 +38,9 @@ frontend/build/
 *~
 .DS_Store
 
+# Docs
+docs/
+
 # Logs
 *.log
 logs/
