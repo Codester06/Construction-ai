@@ -1,0 +1,62 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(ellipse at top right, rgba(235, 227, 213, 0.05) 0%, transparent 50%),
+              radial-gradient(ellipse at bottom left, rgba(176, 166, 149, 0.04) 0%, transparent 50%),
+              var(--color-background);
+  position: relative;
+}
+
+.layout::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(235, 227, 213, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(176, 166, 149, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.layout-body {
+  display: flex;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: var(--spacing-2xl) var(--spacing-2xl) var(--spacing-2xl) 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main-content::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(235, 227, 213, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main-content > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: var(--spacing-lg);
+    padding-bottom: 100px;
+  }
+}

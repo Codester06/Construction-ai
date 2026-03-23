@@ -1,0 +1,175 @@
+.report-renderer {
+  font-family: var(--font-family);
+  font-size: 0.925rem;
+  line-height: 1.8;
+  color: #2A2420;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings — uppercase, bold, with underline rule */
+.report-renderer h1,
+.report-renderer h2 {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #2A2420;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #E8DFD0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.report-renderer h1:first-child,
+.report-renderer h2:first-child {
+  margin-top: 0;
+}
+
+.report-renderer h3 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #4A3F38;
+  margin: 1.5rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.report-renderer h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4A3F38;
+  margin: 1rem 0 0.4rem;
+  text-transform: capitalize;
+}
+
+/* Paragraphs */
+.report-renderer p {
+  margin: 0.5rem 0 0.75rem;
+  color: #3D3330;
+  line-height: 1.8;
+}
+
+/* Tables */
+.report-renderer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #E8DFD0;
+}
+
+.report-renderer thead tr {
+  background: #F4EFE8;
+}
+
+.report-renderer th {
+  padding: 10px 16px;
+  text-align: left;
+  font-weight: 700;
+  color: #2A2420;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  border-bottom: 2px solid #E8DFD0;
+}
+
+.report-renderer td {
+  padding: 9px 16px;
+  color: #3D3330;
+  border-bottom: 1px solid #F0EAE2;
+  vertical-align: top;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.report-renderer tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.report-renderer tbody tr:nth-child(even) {
+  background: #FDFAF7;
+}
+
+.report-renderer tbody tr:hover {
+  background: #F9F5F0;
+}
+
+/* First column — label style, capitalize */
+.report-renderer td:first-child {
+  font-weight: 600;
+  color: #2A2420;
+  white-space: nowrap;
+  background: #F9F5F0;
+  text-transform: capitalize;
+}
+
+/* Lists */
+.report-renderer ul {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.report-renderer ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+  padding: 0;
+}
+
+.report-renderer ul li {
+  padding: 3px 0 3px 1.25rem;
+  position: relative;
+  color: #3D3330;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.report-renderer ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #8B7D6B;
+  font-size: 0.75rem;
+  top: 5px;
+}
+
+.report-renderer ol li {
+  color: #3D3330;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+/* Bold */
+.report-renderer strong {
+  font-weight: 700;
+  color: #2A2420;
+}
+
+/* Horizontal rule */
+.report-renderer hr {
+  border: none;
+  border-top: 1px solid #E8DFD0;
+  margin: 1.75rem 0;
+}
+
+/* Blockquote */
+.report-renderer blockquote {
+  border-left: 3px solid #D4C9BA;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: #6B5D52;
+  font-style: italic;
+  background: #FDFAF7;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Inline code */
+.report-renderer code {
+  background: #F0EAE2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.82em;
+  color: #2A2420;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
