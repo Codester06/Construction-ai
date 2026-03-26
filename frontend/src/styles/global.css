@@ -330,6 +330,8 @@ label {
   align-items: center;
   gap: var(--spacing-md);
   margin-bottom: var(--spacing-2xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1.5px solid #E8DFD0;
 }
 
 .page-header-icon {
@@ -371,6 +373,15 @@ label {
   font-weight: 500;
   letter-spacing: 0.3px;
   margin: 0;
+}
+
+.page-header-brand {
+  margin-left: auto;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #4A3F36;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 /* Section Headers */

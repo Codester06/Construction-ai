@@ -141,6 +141,7 @@ function Chat() {
             <h1>Chat with AI</h1>
             <p className="page-header-subtitle">Ask anything about construction, safety & materials</p>
           </div>
+          <span className="page-header-brand">Construction Report Generator</span>
         </div>
         <div className="chat-header-actions">
           <button className="btn btn-outline btn-sm clear-chat-btn" onClick={handleClearChat}>

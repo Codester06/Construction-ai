@@ -249,6 +249,7 @@ function NewReport() {
           <h1>Generate New Report</h1>
           <p className="page-header-subtitle">Fill in the details below to create your report</p>
         </div>
+        <span className="page-header-brand">Construction Report Generator</span>
       </div>
 
       <div className="card form-card">

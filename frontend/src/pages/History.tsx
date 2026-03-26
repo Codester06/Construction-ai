@@ -145,6 +145,7 @@ function History() {
               <h1>Report History</h1>
               <p className="page-header-subtitle">View, download, and manage your saved reports</p>
             </div>
+            <span className="page-header-brand">Construction Report Generator</span>
           </div>
           <div className="history-controls">
             <div className="search-box">

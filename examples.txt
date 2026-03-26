@@ -1,0 +1,44 @@
+concrete work
+• Work completed: "Poured 48m³ concrete for ground floor slab, Grid A to D"
+• Workers & equipment: "18 workers, 1 concrete pump, 2 vibrators, 1 transit mixer"
+• Safety: "Toolbox talk held at 7am, all PPE compliant, no incidents"
+• Materials: "M25 concrete delivered, slump 120mm, 3 loads from batching plant"
+• Issues/delays: "30min delay due to traffic on access road at 9:00"
+• Progress: "Ground floor slab 60% complete, on schedule"
+
+
+ Steel Erection
+
+• Work completed: "Erected 6 structural steel columns on east elevation, Level 2"
+• Workers & equipment: "8 workers, 1 tower crane, 2 welders, 4 steel fixers"
+• Safety: "Fall arrest harnesses inspected, exclusion zone maintained below crane"
+• Materials: "High-strength bolts torqued to spec, 2 steel sections rejected due to surface rust"
+• Issues/delays: "Crane downtime 1.5hrs for scheduled maintenance at 13:00"
+• Progress: "Steel frame Level 2 east elevation 100% complete, ahead of schedule"
+
+ Safety Incident
+
+• Work completed: "Formwork installation for columns C1 to C6, north block"
+• Workers & equipment: "14 workers, 1 forklift, carpentry team of 6"
+• Safety: "Near-miss reported at 11:30 — worker entered exclusion zone without permit. Toolbox talk conducted, written warning issued"
+• Materials: "Plywood formwork panels delivered, 12 panels damaged on arrival, returned to supplier"
+• Issues/delays: "Work suspended 1hr for safety investigation after near-miss"
+• Progress: "Formwork 45% complete, 1 day behind schedule"
+
+ Finishing Works
+
+• Work completed: "Internal plastering completed Rooms 101–108, Level 1"
+• Workers & equipment: "10 workers, plastering team, 2 mixers, scaffolding erected"
+• Safety: "All PPE compliant, dust masks worn, ventilation adequate"
+• Materials: "Gypsum plaster 12mm two-coat applied, 3 bags cement used for patching"
+• Issues/delays: "No delays"
+• Progress: "Level 1 plastering 80% complete, tiling commenced in washrooms"
+
+ Excavation & Foundation
+
+• Work completed: "Excavation for column footings F1–F8, north wing, depth 1.8m"
+• Workers & equipment: "22 workers, 2 excavators, 1 dewatering pump running continuously"
+• Safety: "Shoring installed on all open trenches, safety officer on site full day"
+• Materials: "Reinforcement cages placed and inspected, binding wire and spacers used"
+• Issues/delays: "Groundwater encountered at 1.4m depth, dewatering extended by 2hrs"
+• Progress: "Foundation excavation 70% complete, rebar fixing to start tomorrow"
