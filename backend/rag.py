@@ -64,7 +64,28 @@ EXPERTISE AREAS:
         context_docs = self.vectorstore.similarity_search(topic, k=3)
         context = "\n\n".join([doc.page_content for doc in context_docs]) if context_docs else "No additional context available."
 
-        sections_text = "Executive Summary, Site Observations, Safety Notes, Materials & Equipment, Recommendations, Next Steps"
+        # Keyword-based section detection — only include sections relevant to the topic
+        topic_lower = topic.lower()
+
+        sections = ["Executive Summary", "Site Observations"]
+
+        if any(w in topic_lower for w in ["safety", "hazard", "ppe", "incident", "risk", "accident", "injury", "protective", "compliance"]):
+            sections.append("Safety Notes")
+
+        if any(w in topic_lower for w in ["material", "concrete", "steel", "timber", "supply", "delivery", "equipment", "crane", "excavator", "machine", "tool", "scaffold"]):
+            sections.append("Materials & Equipment")
+
+        if any(w in topic_lower for w in ["worker", "labour", "labor", "crew", "manpower", "staff", "team", "workforce", "subcontractor"]):
+            sections.append("Workforce Summary")
+
+        if any(w in topic_lower for w in ["quality", "inspection", "test", "defect", "snag", "punch", "standard", "spec", "compliance", "check"]):
+            sections.append("Quality Control")
+
+        if any(w in topic_lower for w in ["issue", "problem", "delay", "block", "obstruct", "challenge", "concern", "risk"]):
+            sections.append("Issues & Risks")
+
+        sections += ["Recommendations", "Next Steps"]
+        sections_text = ", ".join(sections)
 
         tone_instructions = {
             "formal": "Use formal, professional language. Avoid contractions. Write in third person. Use precise technical terminology suitable for client or regulatory submission.",
@@ -114,7 +135,8 @@ OUTPUT FORMAT RULES:
 - Use bullet points (- item) for observations
 - Use horizontal rules (---) between major sections
 - Keep the PROJECT INFORMATION table at the top exactly as shown
-- Include these sections: {sections_text}
+- ONLY include these sections (do not add any others): {sections_text}
+- Only include a section if it is directly relevant to the topic description — skip it entirely if not mentioned or implied
 - If any detail is unknown, write "Not specified" — never fabricate
 """
 
